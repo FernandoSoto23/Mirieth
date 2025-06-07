@@ -1,15 +1,15 @@
 import ErrorMessage from "@/components/Tools/ErrorMessage";
 
-import { useForm } from "react-hook-form";
+/* import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
 
 import { UserLoginForm } from "@/types/user";
 import { Auth } from "@/api/AuthAPI";
 import { useNavigate } from "react-router-dom";
-
+ */
 
 export default function Login() {
-    const navigate = useNavigate();
+/*     const navigate = useNavigate();
     const { mutate } = useMutation({
         mutationFn: Auth,
         onError: () => {
@@ -26,9 +26,9 @@ export default function Login() {
 
     const handleSubmitLogin = (formData: UserLoginForm) => {
         console.log(formData)
-    }
+    } */
 
-
+/* 
     const handleCreateAccountLink = (e: React.MouseEvent<HTMLSpanElement, MouseEvent> ) =>{
         e.preventDefault();
   
@@ -39,12 +39,12 @@ export default function Login() {
         }else{
           navigate("/register-user-company");
         }
-    }
+    } */
 
     return (
         <form
             className="bg-gray-800 h-screen w-full flex flex-col items-center justify-center"
-            onSubmit={handleSubmit(handleSubmitLogin)}
+            /* onSubmit={handleSubmit(handleSubmitLogin)} */
         >
             <h1
                 className="text-6xl font-extrabold text-white"
@@ -63,24 +63,24 @@ export default function Login() {
                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Usuario"
-                        {...register("username", {
+                       /*  {...register("username", {
                             required: "El usuario es requerido"
-                        })}
+                        })} */
                     />
-                    {errors.username &&
+                   {/*  {errors.username &&
                         <ErrorMessage>{errors.username?.message}</ErrorMessage>
-                    }
+                    } */}
                     <input
                         type="password"
                         className="p-3 rounded-sm  border-"
                         placeholder="Contraseña"
-                        {...register("password", {
+                       /*  {...register("password", {
                             required: "La contraseña es requerida"
-                        })}
+                        })} */
                     />
-                    {errors.password &&
+                   {/*  {errors.password &&
                         <ErrorMessage>{errors.password?.message}</ErrorMessage>
-                    }
+                    } */}
                     <button
                         type="submit"
                         className="bg-blue-300 hover:bg-blue-500 p-3 rounded-sm  font-bold"

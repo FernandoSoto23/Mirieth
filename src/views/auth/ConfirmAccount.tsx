@@ -1,4 +1,4 @@
-import ErrorMessage from "@/components/Tools/ErrorMessage";
+/* import ErrorMessage from "@/components/Tools/ErrorMessage";
 
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
@@ -10,34 +10,34 @@ import {
 } from "@chakra-ui/pin-input"
 
 import { UserCompanyRegisterForm } from "@/types/user";
-import { Auth } from "@/api/AuthAPI";
+import { Auth } from "@/api/AuthAPI"; */
 
 
 export default function ConfirmAccount() {
-  const { mutate } = useMutation({
+/*   const { mutate } = useMutation({
     mutationFn: Auth,
     onError: () => {
     },
     onSuccess: () => {
 
     }
-  })
-  const initialValues = {
+  }) */
+/*   const initialValues = {
     name: "",
     username: "",
     email: "",
     password: "",
     passwordConfirm: "",
-  }
-  const { register, handleSubmit, formState: { errors } } = useForm({ defaultValues: initialValues });
+  } */
+/*   const { register, handleSubmit, formState: { errors } } = useForm({ defaultValues: initialValues }); */
 
-  const handleSubmitLogin = (formData: UserCompanyRegisterForm) => {
+/*   const handleSubmitLogin = (formData: UserCompanyRegisterForm) => {
     console.log(formData)
-  }
+  } */
   return (
     <form
       className="flex flex-col items-center justify-center h-screen"
-      onSubmit={handleSubmit(handleSubmitLogin)}
+      /* onSubmit={handleSubmit(handleSubmitLogin)} */
     >
       <h1
         className="text-6xl font-extrabold text-white"
@@ -55,13 +55,13 @@ export default function ConfirmAccount() {
         <div className="flex flex-col p-5 w-full gap-2">
           <label className="font-normal text-2xl text-center block text-white">Codigo: </label>
           <div className="flex justify-center gap-5">
-            <PinInput>
+{/*             <PinInput>
               <PinInputField className="w-10 h-10 p-3 rounded-lg border-gray-300 border placeholder-white font-bold" />
               <PinInputField className="w-10 h-10 p-3 rounded-lg border-gray-300 border placeholder-white font-bold" />
               <PinInputField className="w-10 h-10 p-3 rounded-lg border-gray-300 border placeholder-white font-bold" />
               <PinInputField className="w-10 h-10 p-3 rounded-lg border-gray-300 border placeholder-white font-bold" />
               <PinInputField className="w-10 h-10 p-3 rounded-lg border-gray-300 border placeholder-white font-bold" />
-            </PinInput>
+            </PinInput> */}
           </div>
 
           <button

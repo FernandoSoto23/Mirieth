@@ -20,6 +20,7 @@ export const productsSchema = z.array(
     name: true,
     price: true,
     stock: true,
+    description:true,
     categoryId: true,
     sku: true,
     status: true,

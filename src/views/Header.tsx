@@ -1,13 +1,12 @@
-import { MouseEvent }from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom"
+/* import { MouseEvent }from "react";
+import { useLocation, useNavigate } from "react-router-dom" */
 import NavMenu from "../components/NavMenu"
 
 export default function Header() {
-  const navigate = useNavigate();
+/*   const navigate = useNavigate();
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const showMenu = queryParams.get("navbar");
-  const show = showMenu ? true : false;
 
 
   const handlecustomerLinkClick = (e: MouseEvent<HTMLAnchorElement> ) =>{
@@ -32,7 +31,7 @@ export default function Header() {
     }else{
       navigate("/membership")
     }
-  }
+  } */
   return (
     <header>
       <nav className="bg-white border-gray-200 dark:bg-purple-300">

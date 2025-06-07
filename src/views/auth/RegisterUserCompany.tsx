@@ -1,4 +1,4 @@
-import ErrorMessage from "@/components/Tools/ErrorMessage";
+/* import ErrorMessage from "@/components/Tools/ErrorMessage";
 
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
@@ -6,11 +6,11 @@ import { useMutation } from "@tanstack/react-query";
 import { UserCompanyRegisterForm } from "@/types/user";
 import { Auth, RegisterUserCompanyAccount } from "@/api/AuthAPI";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"; */
 
 
 export default function RegisterUserCompany() {
-    const navigate = useNavigate();
+/*     const navigate = useNavigate();
     const { mutate } = useMutation({
         mutationFn: RegisterUserCompanyAccount,
         onError: (error) => {
@@ -20,22 +20,22 @@ export default function RegisterUserCompany() {
             navigate(`/auth/confirm-account?email=${email}`);
             toast.success(data);
         }
-    })
-    const initialValues = {
+    }) */
+/*     const initialValues = {
         name: "",
         username: "",
         email: "",
         password: "",
         passwordConfirm: "",
     }
-    const { register, handleSubmit, formState: { errors } } = useForm<UserCompanyRegisterForm>({ defaultValues: initialValues });
+    const { register, handleSubmit, formState: { errors } } = useForm<UserCompanyRegisterForm>({ defaultValues: initialValues }); */
 
-    const handleSubmitLogin = (formData: UserCompanyRegisterForm) => {
+/*     const handleSubmitLogin = (formData: UserCompanyRegisterForm) => {
         let email = formData.email;
         mutate(formData);
-    }
+    } */
 
-    const handleConfirmAccountLink = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
+/*     const handleConfirmAccountLink = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
         e.preventDefault();
 
         if (document.startViewTransition) {
@@ -45,11 +45,11 @@ export default function RegisterUserCompany() {
         } else {
             navigate("/confirm-account");
         }
-    }
+    } */
     return (
         <form
             className="flex flex-col items-center justify-center"
-            onSubmit={handleSubmit(handleSubmitLogin)}
+            /* onSubmit={handleSubmit(handleSubmitLogin)} */
         >
             <h1
                 className="text-6xl font-extrabold text-white"
@@ -66,7 +66,7 @@ export default function RegisterUserCompany() {
                 </a>
                 <div className="flex flex-col p-5 w-full gap-2">
                     <label className="text-white text-xl">Nombre: </label>
-                    <input
+{/*                     <input
                         id="name"
                         type="text"
                         className="p-3 rounded-sm border-"
@@ -77,8 +77,8 @@ export default function RegisterUserCompany() {
                     />
                     {errors.name &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
-                    }
-                    <label className="text-white text-xl">Nombre de usuario: </label>
+                    } */}
+{/*                     <label className="text-white text-xl">Nombre de usuario: </label>
                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Ej. JuanP"
@@ -89,8 +89,8 @@ export default function RegisterUserCompany() {
                     {errors.username &&
                         <ErrorMessage>{errors.username?.message}</ErrorMessage>
                     }
-                    <label className="text-white text-xl">Correo Electronico: </label>
-                    <input
+                    <label className="text-white text-xl">Correo Electronico: </label> */}
+{/*                     <input
                         type="email"
                         className="p-3 rounded-sm border-"
                         placeholder="gymapp@gymapp.com"
@@ -101,8 +101,8 @@ export default function RegisterUserCompany() {
                     {errors.email &&
                         <ErrorMessage>{errors.email?.message}</ErrorMessage>
                     }
-                    <label className="text-white text-xl">Contraseña: </label>
-                    <input
+                    <label className="text-white text-xl">Contraseña: </label> */}
+{/*                     <input
                         type="password"
                         className="p-3 rounded-sm border-"
                         placeholder="Ej. JFp123#23"
@@ -113,8 +113,8 @@ export default function RegisterUserCompany() {
                     {errors.password &&
                         <ErrorMessage>{errors.password?.message}</ErrorMessage>
                     }
-                    <label className="text-white">Confirmar Contraseña: </label>
-                    <input
+                    <label className="text-white">Confirmar Contraseña: </label> */}
+{/*                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Ej. JFp123#23"
                         {...register("passwordConfirm", {
@@ -124,16 +124,16 @@ export default function RegisterUserCompany() {
                     {errors.passwordConfirm &&
                         <ErrorMessage>{errors.passwordConfirm?.message}</ErrorMessage>
                     }
-
+ */}
                     <button
                         type="submit"
                         className="bg-amber-400 hover:bg-amber-500 p-3 rounded-sm"
                     >Iniciar Sesion</button>
 
-                    <p
+{/*                     <p
                         className="text-white text-center "
                     >¿Ya tienes cuenta? <span className="text-amber-300 hover:text-amber-400 cursor-pointer font-bold" onClick={handleConfirmAccountLink}>Activala </span></p>
-
+ */}
                     <p
                         className="text-2xl font-bold text-amber-300 hover:text-amber-400 cursor-pointer"
                     >Conoce nuestros planes de servicios</p>

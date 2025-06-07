@@ -1,14 +1,14 @@
-import ErrorMessage from "@/components/Tools/ErrorMessage";
+/* import ErrorMessage from "@/components/Tools/ErrorMessage";
 
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
 
 import { UserCompanyRegisterForm } from "@/types/user";
-import { Auth } from "@/api/AuthAPI";
+import { Auth } from "@/api/AuthAPI"; */
 
 
 export default function RegisterAccount() {
-    const { mutate } = useMutation({
+/*     const { mutate } = useMutation({
         mutationFn: Auth,
         onError: () => {
             
@@ -16,24 +16,24 @@ export default function RegisterAccount() {
         onSuccess: () => {
 
         }
-    })
-    const initialValues = {
+    }) */
+/*     const initialValues = {
         name: "",
         username: "",
         email: "",
         password: "",
         confirmPassword: ""
 
-    }
-    const { register, handleSubmit, formState: { errors } } = useForm<UserCompanyRegisterForm>({ defaultValues: initialValues });
+    } */
+   /*  const { register, handleSubmit, formState: { errors } } = useForm<UserCompanyRegisterForm>({ defaultValues: initialValues }); */
 
-    const handleSubmitRegister = (formData: UserCompanyRegisterForm) => {
+/*     const handleSubmitRegister = (formData: UserCompanyRegisterForm) => {
         console.log(formData)
-    }
+    } */
     return (
         <form
             className="flex flex-col items-center justify-center"
-            onSubmit={handleSubmit(handleSubmitRegister)}
+            /* onSubmit={handleSubmit(handleSubmitRegister)} */
         >
             <h1
                 className="text-6xl font-extrabold text-white"
@@ -54,31 +54,31 @@ export default function RegisterAccount() {
                         type="text"
                         className="p-3 rounded-sm border-"
                         placeholder="Nombre Completo"
-                        {...register("name", {
+/*                         {...register("name", {
                             required: "El nombre es obligatorio"
-                        })}
+                        })} */
                     />
-                    {errors.name &&
+{/*                     {errors.name &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
-                    }
+                    } */}
 
                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Nombre de Usuario"
-                        {...register("username", {
+/*                         {...register("username", {
                             required: "El nombre de usuario es obligatorio"
-                        })}
+                        })} */
                     />
-                    {errors.username &&
+{/*                     {errors.username &&
                         <ErrorMessage>{errors.username?.message}</ErrorMessage>
-                    }
+                    } */}
 
                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Nombre Completo"
-                        {...register("name", {
+/*                         {...register("name", {
                             required: "El nombre es obligatorio"
-                        })}
+                        })} */
                     />
                    {/*  {errors.use &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
@@ -87,9 +87,9 @@ export default function RegisterAccount() {
                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Nombre Completo"
-                        {...register("name", {
+/*                         {...register("name", {
                             required: "El nombre es obligatorio"
-                        })}
+                        })} */
                     />
                   {/*   {errors.user &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
@@ -98,9 +98,9 @@ export default function RegisterAccount() {
                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Nombre Completo"
-                        {...register("name", {
+/*                         {...register("name", {
                             required: "El nombre es obligatorio"
-                        })}
+                        })} */
                     />
                     {/* {errors.user &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
@@ -109,9 +109,9 @@ export default function RegisterAccount() {
                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Nombre Completo"
-                        {...register("name", {
+/*                         {...register("name", {
                             required: "El nombre es obligatorio"
-                        })}
+                        })} */
                     />
                     {/* {errors.user &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
@@ -120,13 +120,13 @@ export default function RegisterAccount() {
                         type="password"
                         className="p-3 rounded-sm  border-"
                         placeholder="Contraseña"
-                        {...register("password", {
+/*                         {...register("password", {
                             required: "La contraseña es requerida"
-                        })}
+                        })} */
                     />
-                    {errors.password &&
+{/*                     {errors.password &&
                         <ErrorMessage>{errors.password?.message}</ErrorMessage>
-                    }
+                    } */}
                     <button
                         type="submit"
                         className="bg-amber-400 hover:bg-amber-500 p-3 rounded-sm"

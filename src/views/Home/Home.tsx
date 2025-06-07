@@ -10,13 +10,13 @@ import ProductCard from "@/components/products/ProductCard";
 import { GetProducts } from "@/api/ProductAPI";
 import OrderModal from "@/components/products/OrderProducts";
 export const HomeView = () => {
-    const [isAdmin]: boolean = useState();
+    const [isAdmin] = useState();
     const navigate = useNavigate();
 
     const [searchParams] = useSearchParams();
     const pedidoId = searchParams.get("pedido");
 
-    const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
+    /* const [isOrderModalOpen, setIsOrderModalOpen] = useState(false); */
 
     const { data, isLoading } = useQuery({
         queryKey: ["products"],

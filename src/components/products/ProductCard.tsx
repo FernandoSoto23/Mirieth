@@ -10,7 +10,6 @@ type ProductCardProps = {
 export default function ProductCard({ product }: ProductCardProps) {
   const navigate = useNavigate();
   const [mainImageIndex, setMainImageIndex] = useState(0);
-
   // Aseguramos que product.image es array, sino un array vacío
   const images = Array.isArray(product.image) ? product.image : [];
 
@@ -55,6 +54,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             ${product.price.toFixed(2)}
           </span>
         </p>
+        <p>{product.description}</p>
         <p>
           Stock:{" "}
           <span
