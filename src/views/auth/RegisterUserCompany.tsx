@@ -11,7 +11,6 @@ import { toast } from "react-toastify";
 
 export default function RegisterUserCompany() {
     const navigate = useNavigate();
-    let email = "";
     const { mutate } = useMutation({
         mutationFn: RegisterUserCompanyAccount,
         onError: (error) => {
@@ -32,7 +31,7 @@ export default function RegisterUserCompany() {
     const { register, handleSubmit, formState: { errors } } = useForm<UserCompanyRegisterForm>({ defaultValues: initialValues });
 
     const handleSubmitLogin = (formData: UserCompanyRegisterForm) => {
-        email = formData.email;
+        let email = formData.email;
         mutate(formData);
     }
 

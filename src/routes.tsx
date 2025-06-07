@@ -9,13 +9,14 @@ import AuthLayout from "./layouts/AuthLayout";
 import RegisterAccount from "./views/auth/RegisterAccount";
 import ConfirmAccount from "./views/auth/ConfirmAccount";
 import RegisterUserCompany from "./views/auth/RegisterUserCompany";
-
+import { HomeView } from "./views/Home/Home";
 export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route element={<AppLayout/>}>
-                    <Route path="/" element={<></>}/>
+                    <Route path="/" element={<HomeView/>}/>
+                     <Route path="/home" element={<HomeView/>}/>
                     <Route path="/customer" element={<CustomerView/>}/>
                     <Route path="/membership" element={<MembershipView/>}/>
                 </Route>

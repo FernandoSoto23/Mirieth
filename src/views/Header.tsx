@@ -35,13 +35,13 @@ export default function Header() {
   }
   return (
     <header>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 dark:bg-purple-300">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
           <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <h1 className="text-4xl font-outfit font-extrabold text-white ml-2">
-              Gym
-              <span className="text-amber-300">
-                App
+            <h1 className="text-4xl font-outfit font-extrabold text-black ml-2">
+              Miri
+              <span className="text-blue-500">
+                Eth
               </span>
             </h1>
           </a>
@@ -50,16 +50,16 @@ export default function Header() {
           </div>
           <div id="mega-menu" className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
             <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
-            <li>
+{/*             <li>
                 <Link
                   className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                   to={"/customer"}
                   onClick={(e)=>handlecustomerLinkClick(e)}
                 >
-                  Clientes
+                  Productos
                 </Link>
-              </li>
-              <li>
+              </li> */}
+{/*               <li>
                 <button 
                   id="mega-menu-dropdown-button" 
                   data-dropdown-toggle="mega-menu-dropdown" 
@@ -156,7 +156,7 @@ export default function Header() {
                     
                     onClick={(e)=>handleMembershipLinkClick(e)}
                 >Membresias</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

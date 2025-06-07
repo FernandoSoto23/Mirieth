@@ -58,19 +58,19 @@ export default function RegisterAccount() {
                             required: "El nombre es obligatorio"
                         })}
                     />
-                    {errors.user &&
+                    {errors.name &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
                     }
 
                     <input
                         className="p-3 rounded-sm border-"
                         placeholder="Nombre de Usuario"
-                        {...register("user", {
+                        {...register("username", {
                             required: "El nombre de usuario es obligatorio"
                         })}
                     />
-                    {errors.user &&
-                        <ErrorMessage>{errors.user?.message}</ErrorMessage>
+                    {errors.username &&
+                        <ErrorMessage>{errors.username?.message}</ErrorMessage>
                     }
 
                     <input
@@ -80,9 +80,9 @@ export default function RegisterAccount() {
                             required: "El nombre es obligatorio"
                         })}
                     />
-                    {errors.user &&
+                   {/*  {errors.use &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
-                    }
+                    } */}
 
                     <input
                         className="p-3 rounded-sm border-"
@@ -91,9 +91,9 @@ export default function RegisterAccount() {
                             required: "El nombre es obligatorio"
                         })}
                     />
-                    {errors.user &&
+                  {/*   {errors.user &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
-                    }
+                    } */}
 
                     <input
                         className="p-3 rounded-sm border-"
@@ -102,9 +102,9 @@ export default function RegisterAccount() {
                             required: "El nombre es obligatorio"
                         })}
                     />
-                    {errors.user &&
+                    {/* {errors.user &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
-                    }
+                    } */}
 
                     <input
                         className="p-3 rounded-sm border-"
@@ -113,9 +113,9 @@ export default function RegisterAccount() {
                             required: "El nombre es obligatorio"
                         })}
                     />
-                    {errors.user &&
+                    {/* {errors.user &&
                         <ErrorMessage>{errors.name?.message}</ErrorMessage>
-                    }
+                    } */}
                     <input
                         type="password"
                         className="p-3 rounded-sm  border-"

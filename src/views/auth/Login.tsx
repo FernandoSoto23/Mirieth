@@ -48,14 +48,14 @@ export default function Login() {
         >
             <h1
                 className="text-6xl font-extrabold text-white"
-            >Inicia <span className="text-amber-300">Sesion</span></h1>
-            <p className="text-white text-2xl m-3">Para <span className="text-amber-300 font-bold">gestionar</span> tus sucursales <span className="text-amber-300 font-bold">disponibles</span></p>
+            >Inicia <span className="text-blue-200">Sesion</span></h1>
+            <p className="text-white text-2xl m-3">Para <span className="text-blue-200 font-bold">gestionar</span> tus productos <span className="text-blue-200 font-bold">disponibles</span></p>
             <div className="p-5 bg-gray-700 min-w-96 flex flex-col items-center justify-center rounded-xl shadow-2xl">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <h1 className="text-4xl font-outfit font-extrabold text-white ml-2">
-                        Gym
-                        <span className="text-amber-300">
-                            App
+                        Miri
+                        <span className="text-blue-200">
+                            Eth
                         </span>
                     </h1>
                 </a>
@@ -83,19 +83,19 @@ export default function Login() {
                     }
                     <button
                         type="submit"
-                        className="bg-amber-400 hover:bg-amber-500 p-3 rounded-sm"
+                        className="bg-blue-300 hover:bg-blue-500 p-3 rounded-sm  font-bold"
                     >Iniciar Sesion</button>
-                    <button
+{/*                     <button
                         className="text-white hover:text-amber-400"
                     >¿Has olvidado tu contraseña?</button>
 
                     <p
                         className="text-white text-center "
-                    >¿No tienes cuenta? <span className="text-amber-300 hover:text-amber-400 cursor-pointer font-bold" onClick={handleCreateAccountLink}>Crea una </span></p>
+                    >¿No tienes cuenta? <span className="text-blue-200 hover:text-amber-400 cursor-pointer font-bold" onClick={handleCreateAccountLink}>Crea una </span></p>
 
                     <p
-                        className="text-2xl font-bold text-amber-300 hover:text-amber-400 cursor-pointer"
-                    >Conoce nuestros planes de servicios</p>
+                        className="text-2xl font-bold text-blue-200 hover:text-amber-400 cursor-pointer"
+                    >Conoce nuestros planes de servicios</p> */}
                 </div>
 
             </div>
